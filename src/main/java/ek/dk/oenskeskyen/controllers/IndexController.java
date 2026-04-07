@@ -8,6 +8,6 @@ public class IndexController {
 
     @GetMapping("/")
     public String welcome() {
-        return "Welcome" + "to the countries website!";
+        return "Welcome to the countries website!";
     }
 }
