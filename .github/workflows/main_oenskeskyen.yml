@@ -49,9 +49,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3A6F7F1A5AD5428DAD18124461968F07 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_EBF77FE05DF345F285C88A55E60A3DBF }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E579B7D39EEF4DA68DE030B3E3379C6C }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CAB1269EBF5E4B43B4F15DC7F90E57EE }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_63570358AA6144A9B87F9F5335F75410 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_68197733A8224D76A0035E8D37CB70F7 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -60,3 +60,4 @@ jobs:
           app-name: 'OenskeSkyen'
           slot-name: 'Production'
           package: '*.jar'
+          
